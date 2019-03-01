@@ -1,1 +1,43 @@
 .failed { color:red }
+
+body {
+  background-color: #333;
+}
+
+p {
+	color: white;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: inline-block;
+}
+
+.navitem {
+	float: left;
+}
+
+.navitem a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+}
+
+.navitem a:hover {
+	background-color: #555;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
