@@ -23,7 +23,7 @@
 		</p>
 		
 		<p>
-			Password: <input type="text" name="password" />		
+			Password: <input type="password" name="password" />		
 		</p>
 		
 		<input type="submit" value="Login" />
