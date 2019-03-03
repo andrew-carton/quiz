@@ -51,6 +51,7 @@
 						<li class="navitem"><a href="${pageContext.request.contextPath}/play">Play</a></li>
 					</c:otherwise>
 				</c:choose>
+				<li class="navitem"><a href="${pageContext.request.contextPath}/logout">Logout</a></li>
 			</ul>
 		</nav>
 	</header>

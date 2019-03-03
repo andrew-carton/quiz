@@ -26,6 +26,8 @@ public class QuizSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().antMatchers("/styles/**").permitAll();
 		http.authorizeRequests().antMatchers("/register").permitAll();
 		http.authorizeRequests().antMatchers("/registerUser").permitAll();
+		http.logout().logoutUrl("/logout").logoutSuccessUrl("/login").invalidateHttpSession(true);                                         
+        
 		http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/login").loginProcessingUrl("/authenticateUser").permitAll();
 	}
 

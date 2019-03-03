@@ -54,6 +54,7 @@ public class RegisterController {
 				session.save(user);
 				session.save(auth);
 				session.getTransaction().commit();
+				resp.sendRedirect(request.getContextPath() + "/login");
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
