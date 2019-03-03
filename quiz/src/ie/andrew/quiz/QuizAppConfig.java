@@ -55,6 +55,7 @@ public class QuizAppConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/styles/**").addResourceLocations("WEB-INF/resources/styles/");
+		registry.addResourceHandler("/images/**").addResourceLocations("WEB-INF/resources/images/");
 	}
 	
 	

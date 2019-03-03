@@ -10,6 +10,7 @@ p {
 
 .navbar {
 	text-align: center;
+	padding: 20px;
 }
 
 .navlist {
@@ -41,7 +42,16 @@ p {
   background-color: #4CAF50;
 }
 
-.answers {
+.myborder {
 	border-style: hidden;
-	border-width: 100px;
+	padding: 50px;
 }
+
+td
+{
+    padding:0 15px 0 15px;
+    color: white;
+}
+
+
+

@@ -6,7 +6,7 @@
 <t:genericpage activeNavItem="play">
     
     <jsp:body>
-    	<div class="answers">
+    	<div class="myborder">
     		<p>Hello ${user}! Your current score is ${score}.</p>
     		<p>
 		    	<c:if test="${correct == true}">

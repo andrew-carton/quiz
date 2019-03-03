@@ -53,6 +53,18 @@ public class QuizController {
 			}
 	    }
 		
+		@RequestMapping("/scores")
+		public String scores(HttpServletRequest request, HttpServletResponse response, Model model) {
+		
+			Session session = hibernateFactory.getCurrentSession();
+			session.beginTransaction();
+			List<User> users = session.createQuery("from User order by score desc").list();
+			model.addAttribute("users", users);
+			
+			session.close();
+			return "scores";
+		}
+		
 		@RequestMapping(value = "/play", method = { RequestMethod.GET, RequestMethod.POST })
 		public String quiz(HttpServletRequest request, Model model) {
 			

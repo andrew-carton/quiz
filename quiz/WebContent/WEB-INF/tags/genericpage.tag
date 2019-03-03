@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+	<p style="text-align: center;"><img width="10%" height="10%" src="${pageContext.request.contextPath}/images/riddle.png" /></p>
 	<header>
 		<nav class="navbar">
 			<ul class="navlist">
@@ -29,7 +29,7 @@
 				</c:choose>
 				<c:choose>
 					<c:when test="${activeNavItem == 'register'}">
-						<li class="navitem"><a class="active" href="${pageContext.request.contextPath}/login">Register</a></li>
+						<li class="navitem"><a class="active" href="${pageContext.request.contextPath}/register">Register</a></li>
 					</c:when>
 					<c:otherwise>
 						<li class="navitem"><a href="${pageContext.request.contextPath}/register">Register</a></li>

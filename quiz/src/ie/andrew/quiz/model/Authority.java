@@ -23,5 +23,8 @@ public class Authority {
 		this.username = username;
 		this.authority = authority;
 	}
-
+	
+	public  Authority() {
+	
+	}
 }

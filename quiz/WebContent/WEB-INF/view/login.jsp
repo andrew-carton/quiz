@@ -6,6 +6,7 @@
 <t:genericpage activeNavItem="login">
     
     <jsp:body>
+    	<div class="myborder">
         <form:form action="${pageContext.request.contextPath}/authenticateUser">
 	
 		<c:if test="${param.error !=null}">
@@ -21,5 +22,6 @@
 		
 		<input type="submit" value="Login" />
 	</form:form>
+	</div>
     </jsp:body>
 </t:genericpage>

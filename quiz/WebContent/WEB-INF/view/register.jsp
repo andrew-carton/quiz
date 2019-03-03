@@ -6,6 +6,7 @@
 <t:genericpage activeNavItem="register">
 
 	<jsp:body>
+		<div class="myborder">
 		 <form:form action="${pageContext.request.contextPath}/registerUser">
 			
 				<c:if test="${param.error !=null}">
@@ -21,6 +22,7 @@
 				
 				<input type="submit" value="Register" />
 			</form:form>
-			
+			</div>
 		    </jsp:body>
+		   
 </t:genericpage>

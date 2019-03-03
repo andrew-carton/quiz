@@ -24,8 +24,10 @@ public class QuizSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/styles/**").permitAll();
+		http.authorizeRequests().antMatchers("/images/**").permitAll();
 		http.authorizeRequests().antMatchers("/register").permitAll();
 		http.authorizeRequests().antMatchers("/registerUser").permitAll();
+		http.authorizeRequests().antMatchers("/scores").permitAll();
 		http.logout().logoutUrl("/logout").logoutSuccessUrl("/login").invalidateHttpSession(true);                                         
         
 		http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/login").loginProcessingUrl("/authenticateUser").permitAll();
